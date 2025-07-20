@@ -9,7 +9,8 @@ from sklearn.feature_selection import mutual_info_classif
 from sklearn.base import clone
 from sklearn.neighbors import NearestNeighbors
 from scipy.spatial.distance import cdist   
-from scipy.stats import friedmanchisquar
+from scipy.stats import friedmanchisquare
+
 
 def read_classification_datasets(paths, max_rows=None):
     dfs = {}
