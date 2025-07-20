@@ -10,7 +10,7 @@ from sklearn.base import clone
 from sklearn.neighbors import NearestNeighbors
 from scipy.spatial.distance import cdist   
 from scipy.stats import friedmanchisquare
-
+from scipy.stats import rankdata
 
 def read_classification_datasets(paths, max_rows=None):
     dfs = {}
