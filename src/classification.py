@@ -418,7 +418,7 @@ def run_classification(name, model, X, y, repetitions, seed, use_advanced_prepro
     for rep in range(repetitions):
         # Split com seed incremental
         X_train, X_test, y_train, y_test = train_test_split(
-            X_selected, y_balanced, test_size=0.3, random_state=seed + rep, stratify=y_balanced
+            X_selected, y_balanced, test_size=0.2, random_state=seed + rep, stratify=y_balanced
         )
         
         if not use_advanced_preprocessing:
